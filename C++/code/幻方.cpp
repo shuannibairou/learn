@@ -71,15 +71,15 @@ int main(){
 		}
 		flag=is_equal(targe,sumRow)&&is_equal(targe,sumCol);
 		// 左上↘️右下
-		sumDiag1 = arr[i][i];
+		sumDiag1 += arr[i][i];
 		// 右上↙️左下
-		sumDiag2 = arr[i][n-1-i];
+		sumDiag2 += arr[i][n-1-i];
 	}
 	// 判断是否等于target
 	flag=is_equal(targe,sumDiag1)&&is_equal(targe,sumDiag2);
 
 	// 输出判定结果
-	cout << (flag ? "y":"n") << endl;
+	cout << "给定的矩阵arr" << (flag ? "是":"不是") << n << "阶幻方" << endl;  // 给定的矩阵arr是3阶幻方
 	
     return 0;
 }
