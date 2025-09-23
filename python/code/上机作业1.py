@@ -83,15 +83,15 @@ for x in range(1,10):
     print(s)
 print('-'*40)
 
-# 输入三角形直角边b1,b2;求周长,面积,两锐角度数
+# 输入三角形直角边b1,b2;求周长,面积,两锐角度数(保留一位小数)
 # :28导入math
 b1=float(input("b1="))
 b2=float(input("b2="))
 b3=math.sqrt(b1**2+b2**2)  # 斜边
 print("周长:",b1+b2+b3)
 print("面积:",b1*b2/2)
-print("b1和斜边b3夹角度数",math.degrees(math.acos(b1/b3)))  # degrees(x):将x弧度装换成角度
-print("b2和斜边b3夹角度数",math.degrees(math.acos(b2/b3)))  # acos(x):返回x的反余弦
+print("b1和斜边b3夹角度数%.1f" % math.degrees(math.acos(b1/b3)))  # degrees(x):将x弧度装换成角度
+print("b2和斜边b3夹角度数%.1f" % math.degrees(math.acos(b2/b3)))  # acos(x):返回x的反余弦
 
 """执行结果
 5050.0
