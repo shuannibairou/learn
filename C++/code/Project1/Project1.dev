@@ -1,7 +1,7 @@
 [Project]
 filename = Project1.dev
 name = Project1
-UnitCount = 2
+UnitCount = 4
 Type = 1
 Ver = 3
 Includes = 
@@ -9,7 +9,7 @@ Libs =
 Bins = 
 ResourceIncludes = 
 MakeIncludes = 
-PrivateResource = 
+PrivateResource = Project1_private.rc
 Compiler = 
 CppCompiler = 
 Linker = 
@@ -51,20 +51,20 @@ Build = 0
 LanguageID = 1033
 CharsetID = 1252
 CompanyName = 
-FileVersion = 
+FileVersion = 0.1
 FileDescription = Developed using the Red Panda C++ IDE
 InternalName = 
 LegalCopyright = 
 LegalTrademarks = 
-OriginalFilename = 
-ProductName = 
-ProductVersion = 
+OriginalFilename = Project1.exe
+ProductName = Project1
+ProductVersion = 0.1.1.1
 AutoIncBuildNr = 0
 SyncProduct = 1
 
 
 [Unit1]
-FileName = node_list.h
+FileName = node_tree.h
 CompileCpp = 0
 Folder = 头文件
 Compile = 0
@@ -77,7 +77,7 @@ RealEncoding = UTF-8
 
 
 [Unit2]
-FileName = 翻转链表.cpp
+FileName = 遍历二叉树.cpp
 CompileCpp = 1
 Folder = 源文件
 Compile = 1
@@ -86,7 +86,46 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = 
+RealEncoding = UTF-8
+
+
+[Unit3]
+FileName = print_tree.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit4]
+FileName = node_list.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit5]
+FileName = node_list.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
 
 
 [CompilerSettings]

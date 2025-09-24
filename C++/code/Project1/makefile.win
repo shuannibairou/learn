@@ -1,0 +1,40 @@
+# Project: Project1
+# Makefile created by Red Panda C++ 3.3.3147
+
+CXX      = "g++.exe"
+CC       = "gcc.exe"
+WINDRES  = "windres.exe"
+RM       = del /q /f
+CD       = cd /d
+LIBS     = "-Wl,--stack,12582912"
+INCS     = 
+CXXINCS  = 
+CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
+CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
+WINDRESFLAGS = 
+RES      = Project1_private.res
+OBJ      = 遍历二叉树.o print_tree.o $(RES)
+BIN      = Project1.exe
+LINKOBJ  = "遍历二叉树.o" "print_tree.o" "Project1_private.res"
+CLEANOBJ = "遍历二叉树.o" "print_tree.o" "Project1_private.res" "Project1.exe"
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) >NUL 2>&1
+
+Project1.exe: $(OBJ)
+
+	$(CXX) $(LINKOBJ) -o "Project1.exe" $(LIBS)
+
+遍历二叉树.o: 遍历二叉树.cpp node_tree.h
+	$(CXX) -c "遍历二叉树.cpp" -o "遍历二叉树.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+print_tree.o: print_tree.cpp node_tree.h
+	$(CXX) -c "print_tree.cpp" -o "print_tree.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Project1_private.res: Project1_private.rc 
+	$(WINDRES) -i "Project1_private.rc" --input-format=rc -o "Project1_private.res" -O coff $(WINDRESFLAGS) 
+
