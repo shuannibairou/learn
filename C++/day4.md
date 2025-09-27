@@ -1,6 +1,6 @@
-[目录](index.md)
-[上一页](day3.md)
-[下一页]()
+#### [目录](index.md)
+#### [上一页](day3.md)
+#### [下一页](day5.md)
 
 == 2025/09/25 周四 ==
 #### 整体描述
@@ -78,4 +78,4 @@ g++ -finput-charset=utf-8 -fexec-charset=gbk main.cpp meuns.cpp operations.cpp r
 
 [目录](index.md)
 [上一页](day3.md)
-[下一页]()
+[下一页](day5.md)

@@ -1,0 +1,32 @@
+[
+    {
+        "caretX": 11,
+        "caretY": 10,
+        "filename": "C:/Users/GUDGA/Desktop/node/c++/code/项目/Project3/BankAccount.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 1,
+        "top": 600
+    },
+    {
+        "caretX": 52,
+        "caretY": 11,
+        "filename": "C:/Users/GUDGA/Desktop/node/c++/code/项目/Project3/main.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 2,
+        "top": 0
+    },
+    {
+        "caretX": 25,
+        "caretY": 22,
+        "filename": "C:/Users/GUDGA/Desktop/node/c++/code/项目/Project3/BankAccount.h",
+        "focused": true,
+        "isOpen": true,
+        "left": 0,
+        "order": 0,
+        "top": 0
+    }
+]
