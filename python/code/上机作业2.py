@@ -1,28 +1,28 @@
-# # p62(13)
-# # 利用for和while循环求阶乘
-# def factorial_for(n:int):
-#     sum=1
-#     for i in range(1,n+1):
-#         sum*=i
-#     return sum
-# def factorial_while(n:int):
-#     sum=1
-#     i=1
-#     while(i<=n):
-#         sum*=i
-#     return sum
-# # 合法性判断
-# def check_input():
-#     while True:
-#         n=int(input("n="))
-#         if n>=0 :
-#             break
-#         print("输入非负整数")
-#     return n
+# p62(13)
+# 利用for和while循环求阶乘
+def factorial_for(n:int):
+    sum=1
+    for i in range(1,n+1):
+        sum*=i
+    return sum
+def factorial_while(n:int):
+    sum=1
+    i=1
+    while(i<=n):
+        sum*=i
+    return sum
+# 合法性判断
+def check_input():
+    while True:
+        n=int(input("n="))
+        if n>=0 :
+            break
+        print("输入非负整数")
+    return n
 
 
-# print(factorial_while(check_input()))
-# print(factorial_for(check_input()))
+print(factorial_while(check_input()))
+print(factorial_for(check_input()))
 
 
 

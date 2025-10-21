@@ -91,7 +91,6 @@
 		  ```
 	* 接口与多态
 
-
 == 10/09/25 thu ==
 
 #### 用java的函数接口实现了可扩展性很强的五子棋
@@ -188,3 +187,44 @@
 		* reverse()
 		* delect(int startIndex,int endIndex)
 		* replace(int startIndex,int endIndex,String str)
+
+== 10/16/25 Thu ==
+
+#### IO流
+
+```java
+import java.io.FileInputStream;
+
+
+public class Test {
+    public static void main(String[] args) {
+        FileInputStream fis=null;
+        try{
+            int temp=0;
+            // 创建字节输入流对象
+            StringBuffer sb=new StringBuffer();
+            fis=new FileInputStream("d:/sublimeDoc/a.txt");
+            while((temp=fis.read())!=-1){
+
+//                System.out.print(temp);
+                sb.append((char)temp);
+            }
+            System.out.println(sb.toString());
+//            int s1=fis.read(); // 读取一个字符的ascii码
+//            System.out.println(s1);
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally {
+            if(fis!=null){
+                try {
+                    fis.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+
+```
+
